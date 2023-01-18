@@ -51,7 +51,9 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
-            <Header/>
+            <header>
+                <h1>ToDo APP by Yuki Morimoto</h1>
+            </header>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
@@ -66,10 +68,6 @@ function TodoListCard() {
             ))}
         </React.Fragment>
     );
-}
-
-function Header() {
-    document.write("ToDO APP by Yuki Morimoto");
 }
 
 function AddItemForm({ onNewItem }) {
